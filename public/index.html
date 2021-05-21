@@ -24,6 +24,16 @@
         socket.on("msj",function (payload){
             console.log("Escuchando..",payload);
         });
+        socket.on("reenvio",function (payload){
+            console.log("desde app..",payload);
+        });
+        socket.on("active bands",function (bands){
+            //table para mejor vista
+            console.clear();
+            console.table("lista de bandas: ",bands);
+        });
+        
+
     </script>
 </body>
 </html>
