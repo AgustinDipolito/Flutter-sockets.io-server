@@ -3,9 +3,9 @@ const Band = require("./models/band");
 const Bands = require("./models/bands");
 
 const bands = new Bands();
-bands .addBand(new Band("duku"));
-bands .addBand(new Band("messi"));
-bands .addBand(new Band("cr7"));
+bands .addBand(new Band("Maroon5"));
+bands .addBand(new Band("Queen"));
+bands .addBand(new Band("BTS"));
 
 //mensajes de sockets
 io.on('connection', client => {
